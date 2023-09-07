@@ -35,6 +35,6 @@ public class NameChecker : MonoBehaviour
 
     public string GetPlayerName()
     {
-        return playerNameInputField.text;
+        return playerNameInputField.textComponent.text;
     }
 }
