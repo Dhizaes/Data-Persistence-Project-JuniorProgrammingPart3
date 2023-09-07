@@ -13,7 +13,7 @@ public class NameChecker : MonoBehaviour
         playerNameInputField.characterLimit = 16;
     }
 
-    private void CustomChangeEvent()
+    public void CustomChangeEvent()
     {
         if (playerNameInputField != null)
         {
