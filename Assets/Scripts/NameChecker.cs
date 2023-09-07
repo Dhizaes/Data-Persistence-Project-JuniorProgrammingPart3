@@ -23,11 +23,11 @@ public class NameChecker : MonoBehaviour
 
                 if (listAsChar.Length > playerNameInputField.characterLimit)
                 {
-                    warningText.text = "Character limit reached";
+                    warningText.enabled = true;
                 }
                 else
                 {
-                    warningText.text = string.Empty;
+                    warningText.enabled = false;
                 }
             }
         }
