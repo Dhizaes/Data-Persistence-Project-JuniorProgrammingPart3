@@ -21,7 +21,7 @@ public class NameChecker : MonoBehaviour
             {
                 char[] listAsChar = playerNameInputField.text.ToCharArray();
 
-                if (listAsChar.Length > playerNameInputField.characterLimit)
+                if (listAsChar.Length >= playerNameInputField.characterLimit)
                 {
                     warningText.enabled = true;
                 }
