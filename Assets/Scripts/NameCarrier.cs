@@ -20,12 +20,13 @@ public class NameCarrier : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
-    private void Start()
+    public string GetPlayerName()
     {
-        if(nameChecker != null)
-        {
-            lifetimePlayerName = nameChecker.GetPlayerName();
-        }
+        return lifetimePlayerName;
+    }
+
+    public void SetPlayerName(string name)
+    {
+        lifetimePlayerName = name;
     }
 }

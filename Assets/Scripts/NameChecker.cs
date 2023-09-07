@@ -33,8 +33,11 @@ public class NameChecker : MonoBehaviour
         }
     }
 
-    public string GetPlayerName()
+    public string GetPlayerNameTextFromInputField()
     {
-        return playerNameInputField.textComponent.text;
+        if (playerNameInputField != null)
+            return playerNameInputField.textComponent.text;
+        else
+            return "Player";
     }
 }
